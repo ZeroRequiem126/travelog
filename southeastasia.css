@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 65px;
+    background-color: #191970;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 10;
+}
+
+.menu-left {
+    font-size: 25px;
+    float: left;
+    line-height: 65px;
+    padding-left: 30px;
+    font-family: 'Chalkduster'
+}
+
+.sitetitle {
+    text-decoration: none;
+    color: white;
+}
+
+.mainpic {
+    width: 100%;
+    height: 630px;
+}
+
+.menu-right {
+    float: right;
+    line-height: 65px;
+    margin-right: 20px;
+}
+
+.menu-right a {
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
+    font-family: 'Silom',sans-serif;
+}
+
+.top-wrapper {
+    position: relative;
+    height: 630px;
+}
+
+.pic-title {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    color: white;
+    font-size: 100px;
+    font-family: 'Silom',sans-serif;
+    letter-spacing: 7px;
+}
+
+.pic-title2 {
+    position: absolute;
+    top: 320px;
+    left: 390px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Apple Chancery',sans-serif;
+    letter-spacing: 7px;
+}
+
+.malaysia {
+    text-align: center;
+    background-color: #d70035;
+    height: 750px;
+}
+
+.place {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title1 {
+    padding-top: 60px;
+    font-size: 45px;
+    font-family: 'Phosphate-Solid',sans-serif;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.summary1 {
+    font-family: 'klee',sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.title2 {
+    font-size: 27px;
+    font-family: 'Silom',sans-serif;
+    position: absolute;
+    top: 370px;
+    color: white;
+    width: 100%;
+}
+
+.text2 {
+    width: 330px;
+    margin: 0 auto;
+    font-family: 'HanziPen SC',sans-serif;
+    color: white;
+}
+
+
+
+/*ここからタイ*/
+
+.thailand {
+    text-align: center;
+    background-color: #202f55;
+    height: 750px;
+}
+
+/*ここからインドネシア*/
+
+.indonesia {
+    text-align: center;
+    background-color: #004d25;
+    height: 750px;
+}
+
+.place-pic {
+    transition: all 1s;
+}
+
+.place-pic:hover {
+   color: #fafdff;
+}
+
+/*hover*/
+.title1 {
+  display: inline-block;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.title1::after {
+  background-color: white;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: .5s all;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title1:hover::after {
+  width: 100%;
+}
+
+.eachmenu {
+  display: inline-block;
+  padding-bottom: 1px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.eachmenu::after {
+  background-color: white;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 4px;
+  position: absolute;
+  transition: .5s all;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eachmenu:hover::after {
+  width: 100%;
+}
+
+
+.eachmenu {
+  transition: all 0.5s;
+}
+
+.eachmenu:hover {
+  background-color: #0068b7;
+}
+
+/*ここからsearch*/
+
+.search {
+    text-align: center;
+}
+
+.search-wrapper {
+    background-color: #dcdcdc;
+    height: 300px;
+}
+
+.search-wrapper div {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Osaka',sans-serif;
+}
+
+.search-wrapper span {
+    font-size: 20px;
+    font-family: 'Wawati SC',sans-serif;
+    background-color: #ff8c00;
+    padding: 15px 40px;
+    box-shadow: 0 7px #ffd700;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #191970;
+    height: 125px;
+    color: white;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-left a {
+    color: white;
+    font-size: 25px;
+    line-height: 125px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-family: 'Chalkduster'
+}
+
+.footer-right {
+    float: right;
+    padding-right: 50px;
+}
+
+.button:active {
+  box-shadow: none;
+  position: relative; top: 7px;
+}
+
+/*ハンバーガーメニュー部分*/
+
+@media screen and (max-width:670px){
+	nav{
+		display: none;
+		position: absolute;
+		top:65px;
+		width: 100%;
+		background:  #191970;
+		left: 0;
+	}
+	
+	.eachmenu {
+		margin: 0 auto;
+		text-align: center;
+		border-bottom: 1px solid #fff;
+	}
+	.eachmenu:last-child{
+		border: none;
+	}
+	.eachmenu {
+		display: block; 
+	}
+	
+	#nav_toggle{
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 4px;
+		z-index: 100;
+	}
+	#nav_toggle div {
+		position: relative;
+		top: 15px;
+	}
+	#nav_toggle span{
+		display: block;
+		height: 3px;
+		background: #fff;
+		position:absolute;
+		width: 100%;
+		left: 300px;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;	
+	}
+	#nav_toggle span:nth-child(1){
+		top:0px;
+	}
+	#nav_toggle span:nth-child(2){
+		top:12px;
+	}
+	#nav_toggle span:nth-child(3){
+		top:24px;
+	}
+	
+	/*開閉ボタンopen時*/
+	.open #nav_toggle span:nth-child(1) {
+			top: 12px;
+		   -webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+		.open #nav_toggle span:nth-child(2) {
+			width: 0;
+			left: 50%;
+		}
+		.open #nav_toggle span:nth-child(3) {
+			top: 12px;
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
+ 
+}

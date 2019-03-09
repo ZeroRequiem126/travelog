@@ -1,0 +1,54 @@
+@media (max-width: 670px ) {
+
+  .place {
+    width: 100%;
+    padding-bottom: 50px;
+   }
+   
+   .text2 {
+       padding-top: 10px;
+   }
+   
+   .menu-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    padding-right: 20px;
+  }
+  
+  .pic-title {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    font-size: 60px;
+    letter-spacing: 4px;
+    }
+
+  .pic-title2 {
+    position: absolute;
+    top: 320px;
+    left: 25px;
+    font-size: 30px;
+    letter-spacing: 7px;
+   }
+  
+  .malaysia {
+    height: 1950px;
+  }
+  
+  .thailand {
+    height: 2050px;
+  }
+
+  .indonesia {
+    height: 1950px;
+  }
+  
+  .search-wrapper span {
+    padding: 15px 100px;
+  }
+  
+}
+
